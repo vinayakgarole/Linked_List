@@ -18,6 +18,20 @@ public class LinkedList {
         }
     }
 
+    void add(int data) {
+
+        Node node = new Node(data);
+
+        if (head == null) {
+
+            head = node;
+            tail = node;
+        } else {
+            tail.next = node;
+            tail = node;
+        }
+    }
+
     void print() {
 
         Node temp = head;
