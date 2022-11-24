@@ -6,12 +6,13 @@ public class LinkedListMain {
 
         System.out.println("Welcome to Data Structure Problems using Java Generics");
 
-        LinkedList linkedList1 = new LinkedList();
+        LinkedList linkedList = new LinkedList();
 
-        linkedList1.add(56);
-        linkedList1.add(30);
-        linkedList1.add(70);
+        linkedList.push(70);
+        linkedList.push(56);
 
-        linkedList1.print();
+        linkedList.insert(30);
+
+        linkedList.print();
     }
 }

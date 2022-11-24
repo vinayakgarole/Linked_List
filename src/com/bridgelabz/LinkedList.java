@@ -32,6 +32,13 @@ public class LinkedList {
         }
     }
 
+    void insert(int data) {
+
+        Node node = new Node(data);
+        head.next = node;
+        node.next = tail;
+    }
+
     void print() {
 
         Node temp = head;
